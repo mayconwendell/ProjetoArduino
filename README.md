@@ -1,10 +1,10 @@
 
-🪟🤖 Automação de Cortina com LDR + Controle Manual via Python
+Automação de Cortina com LDR + Controle Manual via Python
 
 Este projeto implementa um sistema automatizado de abertura/fechamento de cortina, utilizando um sensor LDR (Light Dependent Resistor) para detectar luminosidade e um servo motor para movimentação mecânica.
 Além disso, o sistema conta com uma interface gráfica (GUI) em Python, permitindo controlar a cortina manualmente sempre que desejado.
 
-🌞 Objetivo do Projeto
+Objetivo do Projeto
 
 Automatizar uma cortina de forma que:
 
@@ -16,12 +16,12 @@ Permita controle manual através de um painel criado em Tkinter.
 
 Faça comunicação entre Arduino ⇆ Python via porta serial.
 
-🧩 Como o Sistema Funciona
+Como o Sistema Funciona
 
 O projeto possui duas partes principais:
 
-1️⃣ Arduino – Leitura do LDR e Movimentação do Servo
-📌 Arquivo: código Arduino
+Arduino – Leitura do LDR e Movimentação do Servo
+Arquivo: código Arduino
 #include <Servo.h>
 
 Servo myservo; 
@@ -57,12 +57,12 @@ LDR ≤ 300 → pouca luz → fecha a cortina (0°)
 
 Esse é o modo automático padrão.
 
-2️⃣ Interface Python – Controle Automático e Manual 🖥️🐍
-📌 Arquivo: interface Python Tkinter
+Interface Python – Controle Automático e Manual 🖥️🐍
+Arquivo: interface Python Tkinter
 
 Essa interface permite:
 
-🔄 Modo Automático
+Modo Automático
 
 O Python apenas lê os valores enviados pelo Arduino.
 
@@ -70,7 +70,7 @@ Mostra o valor do LDR na tela.
 
 O Arduino controla o servo sozinho.
 
-🤝 Modo Manual
+Modo Manual
 
 O usuário pode clicar em:
 
@@ -82,12 +82,12 @@ Fechar
 
 O Python cria uma thread para ler os valores da serial constantemente, sem travar a interface gráfica.
 
-🖼️ Resumo visual do fluxo:
+Resumo visual do fluxo:
 Arduino ---> envia LDR ----> Python (mostra na tela)
 Arduino <--- recebe comando <--- Python (manual/auto)
 
-🛠 Como Executar
-✔ Requisitos
+Como Executar
+Requisitos
 
 Arduino UNO ou similar
 
@@ -145,7 +145,7 @@ Abrir totalmente
 
 Fechar totalmente
 
-🎉 Conclusão
+Conclusão
 
 Este projeto demonstra como integrar:
 
